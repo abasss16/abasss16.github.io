@@ -6,29 +6,31 @@
   <title>Adam Bayu Saputra</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="adam bayu.css">
+  <link rel="stylesheet" href="adam_bayu.css">
 </head>
 <body>
+
   <header>
-    <section id="Home"></section>
+    <section id="Home">
     <div class="header">
       <div class="logo">
         <a href="#">Abasss</a>
       </div>
-      <nav>
+      <nav id="navbar">
         <a href="#Home">Home</a>
         <a href="#about">About</a>
         <a href="#Portfolio">Portfolio</a>
         <a href="#Kontak">Contact</a>
       </nav>
     </div>
+    </section>
   </header>
 
   <main>
     <div class="container">
-      <img alt="Profile picture of Abasss" class="profile-pic" src="https://res.cloudinary.com/dyocebxoe/image/upload/v1738258989/IMG_20240831_151425_kqa7tu.jpg">
-      <div class="title">Hi, I'm Adam Bayu Saputra</div>
-      <div class="subtitle">Web Developer | Frontend Developer</div>
+      <img alt="Profile picture" class="profile-pic" src="https://res.cloudinary.com/dyocebxoe/image/upload/v1738258989/IMG_20240831_151425_kqa7tu.jpg">
+      <h1>Hi, I'm Adam Bayu Saputra</h1>
+      <h2>Web Developer | Frontend Developer</h2>
       <div class="social-icons">
         <a href="https://github.com/abasss16"><i class="fab fa-github"></i></a>
         <a href="https://wa.me/6285327848908"><i class="fab fa-whatsapp"></i></a>
@@ -36,30 +38,24 @@
       </div>
     </div>
 
-    <article>
-      <section id="about">
-        <div class="about-section">
-          <h1>About Me</h1>
-          <p>I am a creative programmer committed to providing maximum contributions to projects. I have a deep understanding of technology and adapt easily to new challenges.</p>
-          <p>I have completed several courses and projects related to web development and databases. I am eager to explore innovative solutions and contribute to impactful projects in the industry.</p>
-        </div>
-      </section>
-    </article>
+    <section id="about">
+      <div class="about-section">
+        <h1>About Me</h1>
+        <p>I am a creative programmer committed to providing maximum contributions to projects.</p>
+        <p>I have completed several courses and projects related to web development and databases.</p>
+      </div>
+    </section>
 
     <section class="skills-section">
       <h1>My <span class="highlight">Skills</span></h1>
       <div class="skills-container">
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-        </div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
       </div>
     </section>
 
-    <section id="Portfolio" class="container">
-      <h2>Portfolio</h2>
+    <section id="Portfolio">
+      <h2 class="project">Portfolio</h2>
       <div class="project">
         <h3>Education</h3>
         <p>- Universitas Muhammadiyah Purwokerto | 2024 - Present (Informatics Engineering)</p>
@@ -72,28 +68,31 @@
       </div>
     </section>
 
-    <section class="container">
-      <h1 class="title">Certification</h1>
-      <div class="certificates">
-        <div class="certificate">
-          <img src="https://res.cloudinary.com/dyocebxoe/image/upload/v1738307455/Biru_dan_Emas_Modern_Penghargaan_Sertifikat_20250131_140932_0000_cpq9vt.png" alt="Certificate">
-        </div>
+    <section class="certificates">
+      <h1>Certification</h1>
+      <div class="certificate">
+        <img src="https://res.cloudinary.com/dyocebxoe/image/upload/v1738307455/Biru_dan_Emas_Modern_Penghargaan_Sertifikat_20250131_140932_0000_cpq9vt.png" alt="Certificate">
       </div>
     </section>
 
-    <aside>
-      <section id="Kontak">
-        <img src="https://res.cloudinary.com/dyocebxoe/image/upload/v1738339716/IMG_20250131_230809_dkssms.png" alt="Contact Image">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:adambayusaputra160606@gmail.com">adambayusaputra160606@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/6285327848908">+62 853 2784 8908</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/adambystra_?igsh=eW9vazFkeHhmYWE2">adambystra_</a></p>
-      </section>
+    <aside id="Kontak">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:adambayusaputra160606@gmail.com">adambayusaputra160606@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/6285327848908">+62 853 2784 8908</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/adambystra_?igsh=eW9vazFkeHhmYWE2">adambystra_</a></p>
     </aside>
   </main>
 
   <footer>
     <p>Portfolio Adam Bayu Saputra &#169; 2025, Abasss.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
