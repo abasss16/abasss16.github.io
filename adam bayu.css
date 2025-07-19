@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #95c6f7;
+    background-color: #69b4f1;
     line-height: 1.6;
 }
 
@@ -84,45 +84,53 @@ body {
 }
 
 .skills-section {
-    text-align: center;
-    padding: 20px;
-    display: flex; /* Menambahkan flexbox */
-    flex-direction: column; /* Mengatur arah kolom */
-    align-items: center; /* Memusatkan konten secara horizontal */
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-section h1 {
-    font-size: 3rem;
-    color: white;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
 }
 
 .highlight {
-    color: #2ea4df;
+  color: #2ea4df;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
 }
 
 .skill-item {
-    background-color: #112240;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
+  background-color: #112240;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background-color: #2ea4df;
 }
 
 .skill-item img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
+
 
 .project {
     background: #f4f4f4;
@@ -240,3 +248,13 @@ aside img {
     border-radius: 10px;
     margin-top: 10px; 
         }
+
+        a {
+    color: rgb(0, 0, 0); /* Mengubah warna link menjadi hijau */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+a:hover {
+    color: rgb(0, 0, 0); /* Warna saat kursor diarahkan ke link */
+    text-decoration: underline; /* Munculkan garis bawah saat hover */
+}
